@@ -1,0 +1,35 @@
+{
+  "_snapshot_note": "Hand-seeded snapshot mapping known third-party SDK package identities to their privacy-manifest and signature-requirement status, current as of the sources gathered for this project. Not fetched live — see plan.md scope notes.",
+  "app-lovin-sdk": {
+    "display_name": "AppLovin MAX SDK",
+    "requires_privacy_manifest": true,
+    "requires_signature": false,
+    "api_categories": [
+      {"category": "NSPrivacyAccessedAPICategoryUserDefaults", "reason": "CA92.1"},
+      {"category": "NSPrivacyAccessedAPICategorySystemBootTime", "reason": "35F9.1"}
+    ]
+  },
+  "appsflyerframework": {
+    "display_name": "AppsFlyer SDK",
+    "requires_privacy_manifest": true,
+    "requires_signature": false,
+    "api_categories": [
+      {"category": "NSPrivacyAccessedAPICategoryUserDefaults", "reason": "AC6B.1"},
+      {"category": "NSPrivacyAccessedAPICategoryFileTimestamp", "reason": "C617.1"}
+    ]
+  },
+  "adjust-ios-sdk": {
+    "display_name": "Adjust SDK",
+    "requires_privacy_manifest": true,
+    "requires_signature": false,
+    "api_categories": [
+      {"category": "NSPrivacyAccessedAPICategoryUserDefaults", "reason": "1C8F.1"}
+    ]
+  },
+  "sdwebimage": {
+    "display_name": "SDWebImage",
+    "requires_privacy_manifest": false,
+    "requires_signature": true,
+    "signature_note": "Listed on Apple's required-SDK-signatures list; the XCFramework build must be signed with a valid Apple-issued signature before upload to App Review."
+  }
+}

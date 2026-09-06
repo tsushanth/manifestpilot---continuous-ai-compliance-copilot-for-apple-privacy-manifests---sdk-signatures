@@ -1,0 +1,29 @@
+{
+  "pins": [
+    {
+      "identity": "app-lovin-sdk",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/AppLovin/AppLovin-MAX-SDK-iOS",
+      "state": {"version": "13.0.0"}
+    },
+    {
+      "identity": "appsflyerframework",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
+      "state": {"version": "6.14.0"}
+    },
+    {
+      "identity": "adjust-ios-sdk",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/adjust/ios_sdk",
+      "state": {"version": "4.38.0"}
+    },
+    {
+      "identity": "sdwebimage",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/SDWebImage/SDWebImage",
+      "state": {"version": "5.19.0"}
+    }
+  ],
+  "version": 2
+}

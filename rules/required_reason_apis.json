@@ -1,0 +1,41 @@
+{
+  "_snapshot_note": "Hand-seeded snapshot of Apple's required-reason API categories and a representative subset of their approved reason codes, current as of the sources gathered for this project. Not fetched live — see plan.md scope notes.",
+  "NSPrivacyAccessedAPICategoryUserDefaults": {
+    "description": "Reading or writing NSUserDefaults / CFPreferences",
+    "allowed_reasons": {
+      "CA92.1": "Access info from the same app, per app group, not shared with third parties",
+      "1C8F.1": "Access info from the same app, no app group",
+      "AC6B.1": "A third-party SDK accesses its own CFPreferences suite for internal functionality",
+      "3EC4.1": "Access user defaults via a wrapper method not exposed directly to the app"
+    }
+  },
+  "NSPrivacyAccessedAPICategoryFileTimestamp": {
+    "description": "Reading file or directory timestamp attributes (creation, modification, access)",
+    "allowed_reasons": {
+      "C617.1": "Display file timestamps to the user within the app's own UI",
+      "DDA9.1": "Access timestamps of files inside the app's own container or app group",
+      "3B52.1": "Timestamps used only for file management inside the app's own container"
+    }
+  },
+  "NSPrivacyAccessedAPICategorySystemBootTime": {
+    "description": "Reading system boot time (e.g. via systemUptime)",
+    "allowed_reasons": {
+      "35F9.1": "Measure time elapsed between events or processes within the app itself",
+      "8FFB.1": "Calculate absolute timestamps for events that occurred within the app"
+    }
+  },
+  "NSPrivacyAccessedAPICategoryDiskSpace": {
+    "description": "Reading available or total disk space",
+    "allowed_reasons": {
+      "E174.1": "Check available disk space before writing app-generated content, or to display it to the user",
+      "85F4.1": "Free up disk space when low, as part of the app's own functionality"
+    }
+  },
+  "NSPrivacyAccessedAPICategoryActiveKeyboards": {
+    "description": "Reading the list of active or installed keyboards",
+    "allowed_reasons": {
+      "3EC4.1": "Customize the app's own UI or text input behavior based on active keyboards",
+      "54BD.1": "Enable text input functionality for the app's own custom keyboard extension"
+    }
+  }
+}
